@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: "Helvetica"; */
+    font-weight: 350;
+}
+
+button,
+input,
+a,
+textarea,
+* {
+    outline: none;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+#other-page-watch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(maroon, red);
+    color: black;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-weight: 800;
+}
+
+body {
+    /* background: #313131;
+    color: gray; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    /* flex-direction: column; */
+    /* display: grid;
+    grid-template-columns: repeat(4, 280/4px);
+    grid-template-rows: repeat(1, 1fr); */
+    width: 280px;
+    height: 200px;
+    padding: 0.25rem;
+    /* background: #313131; */
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 2rem;
+}
+
+#root span {
+    width: max-content;
+}
+
+/* #ampm {
+    margin-left: 0.5rem;
+} */
+
+#theme {
+    top: 1rem;
+    left: 1rem;
+}
+
+#developer {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* #twelve-hour {
+    right: 1rem;
+    top: 1rem;
+}
+
+#twenty-four-hour {
+    right: 1rem;
+    top: 3.5rem;
+} */
+
+#theme,
+#developer,
+#twelve-hour,
+#twenty-four-hour {
+    position: fixed;
+    color: gray;
+    background: #121212;
+    border: hidden;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+}
+
+@media only screen and (max-width:300px) {
+    #root {
+        width: 270px;
+    }
+}
+
+/* @media only screen and (min-width:1024px) {
+    #theme, #developer {
+        height: 100px;
+    }
+} */
